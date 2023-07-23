@@ -19,8 +19,6 @@ from asyncio import events
 import pandas as pd
 import time
 
-
-
 # discord bot token(for connecting to bot)
 load_dotenv()
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
@@ -30,7 +28,7 @@ intents.members = True
 client = commands.Bot(intents = intents, command_prefix = '-')
 
 # accessing riot games API
-watcher = LolWatcher('RGAPI-beb5168e-6ba6-4f89-b7d8-13378a4e0501')
+watcher = LolWatcher('RGAPI-681e42f3-4703-4f39-bd91-08381faf0a1d')
 my_region = 'na1'
 
 # connect to mysql database
@@ -41,6 +39,7 @@ sql_connection = pymysql.connect(
     database='league_tracker',
     cursorclass=pymysql.cursors.DictCursor
 )
+
 # setup cursor for executing database queries
 cursor = sql_connection.cursor()
 cursor.execute("USE league_tracker")
@@ -216,28 +215,30 @@ async def displayLeaderboard(ctx, names):
             embed.add_field(name = 'Name:', value = i['league_name'] + '    -    ' + str(level) + '    -    ' + 'Unranked', inline = False)
     await ctx.send(embed = embed)
 
-
-
-
+# displays ranked information
 @client.command()
 async def displayembedRanked(ctx, author, rank, winRate, topChamp, level, rankType):
     
+    # gets the profile picture for top champion
     s = "Square.png"
     champName = topChamp + s
     champ = discord.File("/home/ubuntu/Version 2.0/Champion Pictures/"
     + champName, filename = champName)
         
+    # determines ranked type
     if rankType == 'RANKED_FLEX_5x5':
         title = 'Rank (Ranked Flex)'
     else:
         title = 'Rank (Ranked Solo/Duo)'
-        
+    
+    # creates embed
     embed = discord.Embed(
         title = title,
         description = rank,
         color = discord.Colour.blurple()
     )
     
+    # adds all required information to embed
     embed.set_thumbnail(url = "attachment://" + champName)
     embed.set_author(name = author, icon_url = "attachment://" + champName)
     embed.add_field(name = 'Level', value = level, inline = True)
@@ -246,16 +247,16 @@ async def displayembedRanked(ctx, author, rank, winRate, topChamp, level, rankTy
 
     await ctx.send(file = champ, embed = embed)
 
+# displays unranked information
 @client.command()
 async def displayembedUnranked(ctx, author, level):
     if author == 'gatoralanw':
         logoName = 'ucflol.png'
     else:
         logoName = 'funnymonkey.jpeg'
-    logo = discord.File("/home/ubuntu/Version 2.0/Champion Pictures/" 
-    + logoName, filename = logoName)
+    logo = discord.File("images/" + logoName, filename = logoName)
 
-    embed = discord.Embed(
+    embed = discord.Embed(  
         title = 'Level',
         description = level,
         color = discord.Colour.blurple()
