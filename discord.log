@@ -1,0 +1,135 @@
+2024-09-03 17:36:49,319 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-09-03 17:36:49,953 - discord.client - INFO - logging in using static token
+2024-09-03 17:36:50,358 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-09-03 17:36:50,525 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-xg1l",{"micros":135056,"calls":["id_created",{"micros":652,"calls":[]},"session_lookup_time",{"micros":254,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-183",{"micros":133852,"calls":["start_session",{"micros":117831,"calls":["discord-api-rpc-6774cfbc49-f7w6g",{"micros":113916,"calls":["get_user",{"micros":86402},"get_guilds",{"micros":3185},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":75,"calls":[]},"presence_started",{"micros":15697,"calls":[]},"guilds_started",{"micros":163,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":60,"calls":[]},"connect_finished",{"micros":65,"calls":[]},"build_ready",{"micros":15,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: b0bce4f8fad187a08c75ea074c2426ab).
+2024-09-03 17:45:02,327 - discord.gateway - INFO - Timed out receiving packet. Attempting a reconnect.
+2024-09-03 17:45:02,331 - discord.client - INFO - Got a request to RESUME the websocket.
+2024-09-03 17:45:02,345 - discord.client - ERROR - Attempting a reconnect in 0.96s
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/local/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/usr/local/lib/python3.10/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+2024-09-03 17:45:03,367 - discord.client - ERROR - Attempting a reconnect in 3.52s
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/local/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/usr/local/lib/python3.10/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+2024-09-03 18:01:05,645 - discord.client - ERROR - Attempting a reconnect in 4.34s
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/local/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/usr/local/lib/python3.10/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [Name or service not known]
+2024-09-03 18:01:10,234 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2024-09-03 18:01:10,261 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2024-09-03 18:01:10,289 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2024-09-03 18:01:15,442 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2024-09-03 18:01:15,662 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-zw1n",{"micros":185604,"calls":["id_created",{"micros":1468,"calls":[]},"session_lookup_time",{"micros":394,"calls":[]},"session_lookup_finished",{"micros":33,"calls":[]},"discord-sessions-prd-1-120",{"micros":183380,"calls":["start_session",{"micros":154697,"calls":["discord-api-rpc-7b7665b75c-dvhkz",{"micros":116707,"calls":["get_user",{"micros":8971},"get_guilds",{"micros":4629},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":10}]}]},"starting_guild_connect",{"micros":82,"calls":[]},"presence_started",{"micros":12790,"calls":[]},"guilds_started",{"micros":175,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15603,"calls":[]},"connect_finished",{"micros":15610,"calls":[]},"build_ready",{"micros":19,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 21b467f611056f628d4d62cd2283cc36).
+2024-09-03 18:09:23,506 - discord.client - INFO - Cleaning up tasks.
+2024-09-03 18:09:23,509 - discord.client - INFO - Cleaning up after 1 tasks.
+2024-09-03 18:09:23,512 - discord.client - INFO - All tasks finished cancelling.
+2024-09-03 18:09:23,512 - discord.client - INFO - Closing the event loop.

@@ -1,0 +1,11 @@
+services:
+  discord-bot:
+    image: league-tracker:latest
+    container_name: league-tracker-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - .:/app
