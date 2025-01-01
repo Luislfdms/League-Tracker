@@ -1,0 +1,108 @@
+2025-01-01 03:24:32,403 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-01-01 03:24:32,599 - root - INFO - {'266': 'Aatrox', '103': 'Ahri', '84': 'Akali', '12': 'Alistar', '32': 'Amumu', '34': 'Anivia', '1': 'Annie', '523': 'Aphelios', '22': 'Ashe', '136': 'AurelionSol', '268': 'Azir', '432': 'Bard', '53': 'Blitzcrank', '63': 'Brand', '201': 'Braum', '51': 'Caitlyn', '164': 'Camille', '69': 'Cassiopeia', '31': 'Chogath', '42': 'Corki', '122': 'Darius', '131': 'Diana', '119': 'Draven', '36': 'DrMundo', '245': 'Ekko', '60': 'Elise', '28': 'Evelynn', '81': 'Ezreal', '9': 'Fiddlesticks', '114': 'Fiora', '105': 'Fizz', '3': 'Galio', '41': 'Gangplank', '86': 'Garen', '150': 'Gnar', '79': 'Gragas', '104': 'Graves', '887': 'Gwen', '120': 'Hecarim', '74': 'Heimerdinger', '420': 'Illaoi', '39': 'Irelia', '427': 'Ivern', '40': 'Janna', '59': 'JarvanIV', '24': 'Jax', '126': 'Jayce', '202': 'Jhin', '222': 'Jinx', '145': 'Kaisa', '429': 'Kalista', '43': 'Karma', '30': 'Karthus', '38': 'Kassadin', '55': 'Katarina', '10': 'Kayle', '141': 'Kayn', '85': 'Kennen', '121': 'Khazix', '203': 'Kindred', '240': 'Kled', '96': 'KogMaw', '7': 'Leblanc', '64': 'LeeSin', '89': 'Leona', '876': 'Lillia', '127': 'Lissandra', '236': 'Lucian', '117': 'Lulu', '99': 'Lux', '54': 'Malphite', '90': 'Malzahar', '57': 'Maokai', '11': 'MasterYi', '21': 'MissFortune', '62': 'MonkeyKing', '82': 'Mordekaiser', '25': 'Morgana', '267': 'Nami', '75': 'Nasus', '111': 'Nautilus', '518': 'Neeko', '76': 'Nidalee', '56': 'Nocturne', '20': 'Nunu', '2': 'Olaf', '61': 'Orianna', '516': 'Ornn', '80': 'Pantheon', '78': 'Poppy', '555': 'Pyke', '246': 'Qiyana', '133': 'Quinn', '497': 'Rakan', '33': 'Rammus', '421': 'RekSai', '526': 'Rell', '58': 'Renekton', '107': 'Rengar', '92': 'Riven', '68': 'Rumble', '13': 'Ryze', '360': 'Samira', '113': 'Sejuani', '235': 'Senna', '147': 'Seraphine', '875': 'Sett', '35': 'Shaco', '98': 'Shen', '102': 'Shyvana', '27': 'Singed', '14': 'Sion', '15': 'Sivir', '72': 'Skarner', '37': 'Sona', '16': 'Soraka', '50': 'Swain', '517': 'Sylas', '134': 'Syndra', '223': 'TahmKench', '163': 'Taliyah', '91': 'Talon', '44': 'Taric', '17': 'Teemo', '412': 'Thresh', '18': 'Tristana', '48': 'Trundle', '23': 'Tryndamere', '4': 'TwistedFate', '29': 'Twitch', '77': 'Udyr', '6': 'Urgot', '110': 'Varus', '67': 'Vayne', '45': 'Veigar', '161': 'Velkoz', '254': 'Vi', '234': 'Viego', '112': 'Viktor', '8': 'Vladimir', '106': 'Volibear', '19': 'Warwick', '498': 'Xayah', '101': 'Xerath', '5': 'XinZhao', '157': 'Yasuo', '777': 'Yone', '83': 'Yorick', '350': 'Yuumi', '154': 'Zac', '238': 'Zed', '115': 'Ziggs', '26': 'Zilean', '142': 'Zoe', '143': 'Zyra'}
+2025-01-01 03:24:32,600 - discord.client - INFO - logging in using static token
+2025-01-01 03:24:33,033 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 03:24:33,167 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-86pt",{"micros":91973,"calls":["id_created",{"micros":893,"calls":[]},"session_lookup_time",{"micros":1630,"calls":[]},"session_lookup_finished",{"micros":21,"calls":[]},"discord-sessions-prd-1-67",{"micros":89134,"calls":["start_session",{"micros":41250,"calls":["discord-api-rpc-799bd6f864-st29t",{"micros":37729,"calls":["get_user",{"micros":9448},"get_guilds",{"micros":10560},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":82,"calls":[]},"presence_started",{"micros":4831,"calls":[]},"guilds_started",{"micros":175,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":42763,"calls":[]},"connect_finished",{"micros":42769,"calls":[]},"build_ready",{"micros":24,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 22c4ba99f0b153d6aa6815e4d7cf2d29).
+2025-01-01 03:29:37,115 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 03:29:37,118 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 03:29:37,411 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 03:29:37,449 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 03:29:37,493 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 03:46:04,433 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 03:46:04,528 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-n4ls",{"micros":50799,"calls":["id_created",{"micros":828,"calls":[]},"session_lookup_time",{"micros":235,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-267",{"micros":49423,"calls":["start_session",{"micros":32602,"calls":["discord-api-rpc-799bd6f864-b9srs",{"micros":28877,"calls":["get_user",{"micros":5594},"get_guilds",{"micros":2993},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":75,"calls":[]},"presence_started",{"micros":300,"calls":[]},"guilds_started",{"micros":132,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":16280,"calls":[]},"connect_finished",{"micros":16285,"calls":[]},"build_ready",{"micros":25,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: afaf8fdc71567baca969f6f7f9fd36ad).
+2025-01-01 03:48:18,298 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 03:48:18,300 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 03:48:18,675 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 03:48:18,713 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 03:48:18,751 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 03:48:23,945 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 03:48:24,100 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-ndt7",{"micros":107072,"calls":["id_created",{"micros":724,"calls":[]},"session_lookup_time",{"micros":345,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-221",{"micros":105713,"calls":["start_session",{"micros":30627,"calls":["discord-api-rpc-799bd6f864-n9ncs",{"micros":26168,"calls":["get_user",{"micros":5682},"get_guilds",{"micros":1876},"send_scheduled_deletion_message",{"micros":5},"guild_join_requests",{"micros":174},"authorized_ip_coro",{"micros":5}]}]},"starting_guild_connect",{"micros":99,"calls":[]},"presence_started",{"micros":14749,"calls":[]},"guilds_started",{"micros":187,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":60019,"calls":[]},"connect_finished",{"micros":60025,"calls":[]},"build_ready",{"micros":23,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 7cca2c89a2ed77c1a1ba926d9099605d).
+2025-01-01 04:21:25,828 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 04:21:25,831 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 04:21:26,112 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 04:21:26,154 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 04:21:26,196 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 04:21:31,377 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 04:21:31,532 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-5b8w",{"micros":98123,"calls":["id_created",{"micros":672,"calls":[]},"session_lookup_time",{"micros":313,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-61",{"micros":96854,"calls":["start_session",{"micros":50427,"calls":["discord-api-rpc-799bd6f864-b8666",{"micros":45958,"calls":["get_user",{"micros":5508},"get_guilds",{"micros":5145},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":91,"calls":[]},"presence_started",{"micros":36810,"calls":[]},"guilds_started",{"micros":147,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":9351,"calls":[]},"connect_finished",{"micros":9356,"calls":[]},"build_ready",{"micros":19,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: b378a48810c2acecfeea3102f46bd6b1).
+2025-01-01 04:22:23,271 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 04:22:23,279 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 04:22:23,608 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 04:22:23,654 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 04:22:23,702 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 04:22:28,897 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 04:22:29,072 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-4pmx",{"micros":133549,"calls":["id_created",{"micros":1015,"calls":[]},"session_lookup_time",{"micros":5696,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-1-231",{"micros":125655,"calls":["start_session",{"micros":95114,"calls":["discord-api-rpc-799bd6f864-zfhwx",{"micros":83959,"calls":["get_user",{"micros":13005},"get_guilds",{"micros":32866},"send_scheduled_deletion_message",{"micros":15},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":68,"calls":[]},"presence_started",{"micros":250,"calls":[]},"guilds_started",{"micros":113,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":30085,"calls":[]},"connect_finished",{"micros":30090,"calls":[]},"build_ready",{"micros":16,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 648b62dbe05d93758591912add10e2ae).
+2025-01-01 04:43:21,876 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 04:43:21,879 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 04:43:22,267 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 04:43:22,306 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 04:43:22,347 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 04:43:27,519 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 04:43:28,472 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 04:43:28,472 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 04:43:28,477 - discord.client - ERROR - Attempting a reconnect in 1.37s
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/local/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/usr/local/lib/python3.10/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 544, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client_reqrep.py", line 890, in start
+    message, payload = await self._protocol.read()  # type: ignore
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/streams.py", line 604, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+2025-01-01 04:43:30,101 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 04:43:30,141 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 04:43:30,181 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 04:43:35,408 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 04:43:35,414 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 04:43:35,414 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 04:43:35,422 - discord.client - ERROR - Attempting a reconnect in 0.34s
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/discord/client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/local/lib/python3.10/asyncio/tasks.py", line 445, in wait_for
+    return fut.result()
+  File "/usr/local/lib/python3.10/site-packages/discord/gateway.py", line 305, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 967, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "/usr/local/lib/python3.10/site-packages/discord/http.py", line 192, in request
+    async with self.__session.request(method, url, **kwargs) as r:
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client.py", line 544, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/client_reqrep.py", line 890, in start
+    message, payload = await self._protocol.read()  # type: ignore
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/streams.py", line 604, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+2025-01-01 04:43:36,046 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 04:43:36,088 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 04:43:36,130 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 05:30:00,960 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 05:30:01,091 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-jj18",{"micros":88187,"calls":["id_created",{"micros":864,"calls":[]},"session_lookup_time",{"micros":2919,"calls":[]},"session_lookup_finished",{"micros":19,"calls":[]},"discord-sessions-prd-1-193",{"micros":83173,"calls":["start_session",{"micros":36194,"calls":["discord-api-rpc-799bd6f864-v68p5",{"micros":32293,"calls":["get_user",{"micros":6952},"get_guilds",{"micros":5318},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":85,"calls":[]},"presence_started",{"micros":8274,"calls":[]},"guilds_started",{"micros":147,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":38444,"calls":[]},"connect_finished",{"micros":38450,"calls":[]},"build_ready",{"micros":18,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 7364f98078fec2e48fd4da4e8d4b8850).
+2025-01-01 05:30:52,295 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 05:30:52,299 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 05:30:52,603 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 05:30:52,667 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 05:30:52,711 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 05:30:57,919 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 05:30:58,020 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-qjzf",{"micros":59015,"calls":["id_created",{"micros":778,"calls":[]},"session_lookup_time",{"micros":259,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-260",{"micros":57616,"calls":["start_session",{"micros":24744,"calls":["discord-api-rpc-799bd6f864-2k2jw",{"micros":21715,"calls":["get_user",{"micros":4208},"get_guilds",{"micros":2494},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":497},"authorized_ip_coro",{"micros":5}]}]},"starting_guild_connect",{"micros":35,"calls":[]},"presence_started",{"micros":19099,"calls":[]},"guilds_started",{"micros":144,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":13562,"calls":[]},"connect_finished",{"micros":13568,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 8cb98ac4d341aa28f30a82769aa91b95).
+2025-01-01 05:40:53,567 - discord.gateway - INFO - Websocket closed with 1006, attempting a reconnect.
+2025-01-01 05:40:53,568 - discord.client - INFO - Got a request to RESUME the websocket.
+2025-01-01 05:40:53,909 - discord.gateway - INFO - Shard ID None has sent the RESUME payload.
+2025-01-01 05:40:53,950 - discord.gateway - INFO - Shard ID None session has been invalidated.
+2025-01-01 05:40:53,995 - discord.client - INFO - Got a request to IDENTIFY the websocket.
+2025-01-01 05:40:59,206 - discord.gateway - INFO - Shard ID None has sent the IDENTIFY payload.
+2025-01-01 05:40:59,304 - discord.gateway - INFO - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-2ljl",{"micros":51883,"calls":["id_created",{"micros":1041,"calls":[]},"session_lookup_time",{"micros":265,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-280",{"micros":50050,"calls":["start_session",{"micros":25799,"calls":["discord-api-rpc-799bd6f864-x4zm9",{"micros":22203,"calls":["get_user",{"micros":4058},"get_guilds",{"micros":2389},"send_scheduled_deletion_message",{"micros":5},"guild_join_requests",{"micros":571},"authorized_ip_coro",{"micros":5}]}]},"starting_guild_connect",{"micros":42,"calls":[]},"presence_started",{"micros":11667,"calls":[]},"guilds_started",{"micros":117,"calls":[]},"lobbies_started",{"micros":2,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":12373,"calls":[]},"connect_finished",{"micros":12379,"calls":[]},"build_ready",{"micros":40,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 94ee9dafd7ba2a6357bd555af5136330).
