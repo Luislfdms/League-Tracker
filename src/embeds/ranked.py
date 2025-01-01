@@ -26,6 +26,6 @@ async def displayRanked(ctx, author, rank, winRate, topChamp, level, rankType):
     embed.set_author(name = author, icon_url = "attachment://" + champName)
     embed.add_field(name = 'Level', value = level, inline = True)
     embed.add_field(name = 'Win Rate', value = str(winRate) + '%', inline = True)
-    embed.add_field(name = 'Top Champion', value = topChamp, inline = True)
+    embed.add_field(name = 'Top Champions', value = topChamps, inline = True)
 
     await ctx.send(file = champ, embed = embed)

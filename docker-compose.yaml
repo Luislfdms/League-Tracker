@@ -2,10 +2,26 @@ services:
   discord-bot:
     image: league-tracker:latest
     container_name: league-tracker-container
+    depends_on:
+      - db
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - DATABASE_HOST=db
     env_file:
       - .env
     volumes:
       - .:/app
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_db
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
