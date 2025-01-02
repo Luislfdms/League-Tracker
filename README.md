@@ -2,8 +2,8 @@
 Discord bot for looking up league of legends data
 
 # Docker commands
-docker compose run up 
-docker compose run up -d (disconnected mode)
+docker compose build
+docker compose up
 
 docker compose down 
 

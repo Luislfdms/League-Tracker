@@ -1,3 +1,2 @@
-from .lookup import lookup
+from .rank import rank
 from .register import register
-from .stats import stats

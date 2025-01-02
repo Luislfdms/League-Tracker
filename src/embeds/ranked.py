@@ -1,18 +1,31 @@
 import discord
-
+import aiohttp
+import io
 
 # displays ranked information
-async def displayRanked(ctx, author, rank, winRate, topChamp, level, rankType):
+async def displayRanked(ctx, player, rank, winRate, topChamps, rankType):
     
-    # gets the profile picture for top champion
-    champName = topChamp + ".png"
-    champ = discord.File("https://ddragon.leagueoflegends.com/cdn/12.4.1/img/champion/" + champName, filename = champName)
+    # Construct the champion image URL
+    champ_name = topChamps[0] + ".png"
+    champ_url = f"https://ddragon.leagueoflegends.com/cdn/12.4.1/img/champion/{champ_name}"
+    
+    # Fetch the champion image
+    async with aiohttp.ClientSession() as session:
+        async with session.get(champ_url) as response:
+            if response.status != 200:
+                await ctx.send("Could not fetch champion image.")
+                return
+            image_data = await response.read()
+    
+    # Create a file-like object from the image data
+    image_file = io.BytesIO(image_data)
+    discord_file = discord.File(fp=image_file, filename=champ_name)
         
     # determines ranked type
-    if rankType == 'RANKED_FLEX_5x5':
-        title = 'Rank (Ranked Flex)'
+    if rankType == 'RANKED_FLEX_SR':
+        title = 'Ranked Flex'
     else:
-        title = 'Rank (Ranked Solo/Duo)'
+        title = 'Ranked Solo/Duo'
     
     # creates embed
     embed = discord.Embed(
@@ -22,10 +35,9 @@ async def displayRanked(ctx, author, rank, winRate, topChamp, level, rankType):
     )
     
     # adds all required information to embed
-    embed.set_thumbnail(url = "attachment://" + champName)
-    embed.set_author(name = author, icon_url = "attachment://" + champName)
-    embed.add_field(name = 'Level', value = level, inline = True)
+    embed.set_thumbnail(url = "attachment://" + champ_name)
+    embed.set_author(name = player, icon_url = "attachment://" + champ_name)
     embed.add_field(name = 'Win Rate', value = str(winRate) + '%', inline = True)
     embed.add_field(name = 'Top Champions', value = topChamps, inline = True)
 
-    await ctx.send(file = champ, embed = embed)
+    await ctx.send(file = discord_file, embed = embed)

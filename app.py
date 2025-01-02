@@ -6,8 +6,7 @@ from discord.ext import commands
 from src.api import RiotAPI
 from src.config import discord_token, riot_token, postgres_db, postgres_password, postgres_user, postgres_port, postgres_host
 from src.commands import register
-from src.commands import lookup
-from src.commands import stats
+from src.commands import rank
 
 
 class LeagueBot(commands.Bot):
@@ -66,8 +65,7 @@ def main():
 
     # Add the register command from the external file
     client.add_command(register)
-    client.add_command(lookup)
-    client.add_command(stats)
+    client.add_command(rank)
     
     client.run(discord_token)
 
